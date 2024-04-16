@@ -70,7 +70,7 @@ export default class Hls implements HlsEventEmitter {
   private capLevelController: CapLevelController;
   private latencyController: LatencyController;
   private levelController: LevelController;
-  private streamController: StreamController;
+  public streamController: StreamController;
   private audioTrackController: AudioTrackController;
   private subtitleTrackController: SubtitleTrackController;
   private emeController: EMEController;

@@ -14,6 +14,7 @@ import ContentSteeringController from './controller/content-steering-controller'
 import EMEController from './controller/eme-controller';
 import ErrorController from './controller/error-controller';
 import FPSController from './controller/fps-controller';
+import StreamController from './controller/stream-controller';
 import SubtitleTrackController from './controller/subtitle-track-controller';
 
 export default Hls;
@@ -36,6 +37,7 @@ export {
   EMEController,
   ErrorController,
   FPSController,
+  StreamController,
   SubtitleTrackController,
 };
 export { SubtitleStreamController } from './controller/subtitle-stream-controller';
