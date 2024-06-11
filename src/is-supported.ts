@@ -3,7 +3,11 @@ import { mimeTypeForCodec } from './utils/codecs';
 import type { ExtendedSourceBuffer } from './types/buffer';
 
 function getSourceBuffer(): typeof self.SourceBuffer {
-  return self.SourceBuffer || (self as any).WebKitSourceBuffer;
+  return (
+    (self as any).ManagedSourceBuffer ||
+    self.SourceBuffer ||
+    (self as any).WebKitSourceBuffer
+  );
 }
 
 export function isMSESupported(): boolean {
