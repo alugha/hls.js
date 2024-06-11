@@ -59,3 +59,5 @@ export {
 export { AttrList } from './utils/attr-list';
 export { isSupported, isMSESupported } from './is-supported';
 export { getMediaSource } from './utils/mediasource-helper';
+
+export * from './types/events';
